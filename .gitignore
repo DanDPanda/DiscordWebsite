@@ -1,9 +1,5 @@
-keys.json
-node_modules/mariasql
-webpage/node_modules/ngrok
-webpage/node_modules/mariasql
 package-lock.json
 .DS_Store
-log.txt
 .env
 .vscode
+node_modules
