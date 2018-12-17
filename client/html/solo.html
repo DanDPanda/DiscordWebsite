@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="client/css/style.css">
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+              <li><a href="/"><b>Main Page</b></a></li>
+              <li><a href="/pokemon"><b>Pokemon List</b></a></li>
+              <li><a href="/logs"><b>Output Logs</b></a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <p id="title_text" align="center"></p>
+      <table align="center" style="width:66%;border:0">
+        <tr style="background:transparent;border:0;">
+        <td style="vertical-align:top;border:0;">
+        <table class="table" align="center" border="1" cellpadding="25" style="width:617px;">
+          <thead>
+            <tr>
+              <th style="border-bottom: 1px solid black"><font size='5'>Owned Pokemon</font></th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+          </tbody>
+        </table>
+        </td>
+        <td style="vertical-align:top;border:0">
+        <table class="table" align="center" border="1" cellpadding="25" style="width:617px;">
+          <thead>
+            <tr>
+              <th style="border-bottom: 1px solid black"><font size='5'>Not Owned Pokemon</font></th>
+            </tr>
+          </thead>
+          <tbody id="table_bod">
+          </tbody>
+        </table>
+        </td>
+        </tr>
+      </table>
+      <script type="text/javascript" src="client/js/solo_script.js"></script>
+  </body>
+</html>

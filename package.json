@@ -1,0 +1,19 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "This is a discord bot meant to be used only by myself in my server.",
+  "main": "index.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "sql": "^0.78.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

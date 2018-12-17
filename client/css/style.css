@@ -1,0 +1,23 @@
+h1, ul, div {
+    text-align: center !important;
+}
+
+#myFavTable.thead {
+	text-align: center;
+}
+
+th, td, tr {
+    border: 1px solid black;
+}
+
+th {
+    background: #FFF;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+td {
+    vertical-align: middle;
+}
+
+tr:nth-child(odd) {background: #DDD}
