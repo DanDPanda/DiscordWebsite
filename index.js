@@ -69,7 +69,7 @@ app.post("/payload", (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      console.log("Git pulled.");
+      console.log(`Git pulled in ${req.body.repository.name}.`);
     }
   });
 });
