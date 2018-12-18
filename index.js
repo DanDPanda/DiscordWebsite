@@ -63,7 +63,7 @@ app.post("/payload", (req, res) => {
     req.body.pusher.name + " just pushed to " + req.body.repository.name
   );
   if (req)
-  exec(repNames.rep, (err, stdout, stderr) => {
+  exec(repNames.getString(rep), (err, stdout, stderr) => {
     if (err) {
       console.log(err);
     } else {
