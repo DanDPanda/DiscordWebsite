@@ -264,7 +264,7 @@ app.get("/logs", (req, res) => {
 
 // Gets the past 100 output logs
 app.get("/getLogs", (req, res) => {
-  var content = fs.readFileSync(__dirname + "/../bot/log.txt", "utf8").split("\n");
+  var content = fs.readFileSync(__dirname + "~/DiscordBot/log.txt", "utf8").split("\n");
   let table = "";
   if (content.length < 100) {
     for (var i = 0; i < content.length - 1; i++) {
