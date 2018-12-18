@@ -53,17 +53,19 @@ app.listen(9007, () => console.log("Listening on port 9007!"));
 // Listens to the git pushes
 // Will pull without needing username and pass!
 app.post("/payload", (req, res) => {
-  let repNames = {
-    "DiscordWebsite": "git -C ~/DiscordWebsite pull",
-    "DiscordBot": "git -C ~/DiscordBot pull",
-    "DiscordHost": "git -C ~/DiscordHost pull"
+  let request;
+  if (req.body.repository.name == "DiscordWebsite") {
+    request = "git -C ~/DiscordWebsite pull";
+  } else if (req.body.repository.name == "DiscordBot") {
+    request = "git -C ~/DiscordBot pull";
+  } else if (req.body.repository.name == "DiscordHost") {
+    request = "git -C ~/DiscordHost pull";
   }
-  let rep = req.body.repository.name;
   console.log(
     req.body.pusher.name + " just pushed to " + req.body.repository.name
   );
   if (req)
-  exec(repNames.getString(rep), (err, stdout, stderr) => {
+    exec(request, (err, stdout, stderr) => {
     if (err) {
       console.log(err);
     } else {
